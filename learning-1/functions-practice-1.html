@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Functions practice 1</title>
+    </head>
+    <body>
+
+        <p>Add random names here!</p>
+        <button id="test">
+            CLICK!
+        </button>
+        <script>
+            const names = ['Chris', 'Bob', 'Anne', 'Franco', 'Name 5', 'The Real Name 5']
+
+            body = document.querySelector("body");
+            
+            function randomArrayElement(array) {
+                len = array.length;
+                randProb = Math.random();
+                index = Math.floor(randProb*len);
+                return array[index];
+            }
+
+            function appendRandomName() {
+                para = document.createElement('p');
+                para.innerHTML = randomArrayElement(names);
+                body.appendChild(para);
+            }
+
+            myButton = document.querySelector('#test');
+            myButton.addEventListener('click', event => appendRandomName());
+
+        </script> 
+    </body>
+
+</html>
