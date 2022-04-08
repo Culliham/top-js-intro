@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TOP - JavaScript Practice</title>
+    </head>
+    <body>
+        <script>
+
+            function add7 (number) {
+                return number + 7;
+            }
+
+            function multiply (a=1, b=1) {
+                return a*b;
+            }
+
+            function capatilize (string = "NO STRING ENTERED!") {
+                return string.toUpperCase();
+            }
+
+            function lastLetter (input) {
+                let pos = input.length-1;
+                if (pos > 0) {
+                    return input.substring(pos);
+                } else {
+                    return "";
+                }
+            }
+
+        </script>
+    </body>
+</html>
